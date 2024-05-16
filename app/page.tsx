@@ -1,4 +1,7 @@
+'use client';
 import Image from "next/image";
+import Wishlist from "./components/Wishlist";
+import Wishlist2 from "./components/Wishlist2";
 
 export default function Home() {
   return (
@@ -39,7 +42,24 @@ export default function Home() {
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+      <div className="flex flex-col items-center justify-center gap-8">
+        <h1 className="text-4xl font-bold text-center">
+          Welcome to Wishlist Functional Component
+        </h1>
+
+        <Wishlist />
+      </div>
+
+      <hr className="w-full border-gray-300 dark:border-neutral-800/30" />
+
+      <div className="flex flex-col items-center justify-center gap-8">
+        <h1 className="text-4xl font-bold text-center">
+          Welcome to Wishlist Class Component
+        </h1>
+        <Wishlist2 />
+      </div>
+
+      {/* <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -107,7 +127,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   );
 }
