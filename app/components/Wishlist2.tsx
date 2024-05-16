@@ -21,9 +21,9 @@ class Wishlist2 extends React.Component {
   render() {
     return (
       <div>
-        <h2>Wishlist 2</h2>
+        <h2 className='font-semibold'>Wishlist 2</h2>
         {this.state.wishlist.map((item, index) => (
-          <p key={index}>{item}</p>
+          <p key={index}>{index+1}.{' '}{item}</p>
         ))}
         <button onClick={() => this.addToWishlist("New Item")}>Add New Product</button>
       </div>

@@ -12,7 +12,7 @@ const addToWishlist = (item: string) => {
         <div>
             <h2 className='font-semibold'>Wishlist</h2>
             {wishlist.map((item, index) => (
-                <p key={index}>{item}</p>
+                <p key={index}>{index+1}.{' '}{item}</p>
             ))}
             <button onClick={() => addToWishlist('New Item')}>Add New Item</button>
         </div>
