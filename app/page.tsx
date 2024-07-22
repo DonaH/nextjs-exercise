@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
-import Wishlist from "./components/Wishlist";
-import Wishlist2 from "./components/Wishlist2";
+import Wishlist from "./components/Wishlist-fnc";
+import Wishlist2 from "./components/Wishlist2-class";
 
 export default function Home() {
   return (
